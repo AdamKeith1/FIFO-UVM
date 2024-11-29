@@ -1,6 +1,20 @@
 `include "../include/FIFO_IF.svh"
 `include "../include/FIFO_PKG.svh"
 
+// --- FIFO Interface --- //
+/*
+modport fifo (
+    input   w_en,
+    input   r_en,
+    input   w_data,
+    input   flush,
+    output  full,
+    output  empty,
+    output  flushed,
+    output  r_data
+);
+*/
+
 module fifo (
     input logic clk,
     input logic n_rst,
